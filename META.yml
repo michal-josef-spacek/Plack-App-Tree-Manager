@@ -1,5 +1,5 @@
 ---
-abstract: 'Plack Oracle Tree Manager application.'
+abstract: 'Plack Tree Manager application.'
 author:
   - 'Michal Josef Spacek <skim@cpan.org>'
 build_requires:
@@ -15,7 +15,7 @@ license: bsd
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
-name: Plack-App-Tree-Oracle
+name: Plack-App-Tree-Manager
 no_index:
   directory:
     - inc
@@ -23,11 +23,11 @@ no_index:
     - xt
 requires:
   Plack::Component::Tags::HTML: 0
-  Tags::HTML::Tree::Oracle: 0
+  Tags::HTML::Tree::Manager: 0
   perl: 5.8.0
 resources:
-  bugtracker: https://github.com/michal-josef-spacek/Plack-App-Tree-Oracle/issues
-  homepage: https://github.com/michal-josef-spacek/Plack-App-Tree-Oracle
+  bugtracker: https://github.com/michal-josef-spacek/Plack-App-Tree-Manager/issues
+  homepage: https://github.com/michal-josef-spacek/Plack-App-Tree-Manager
   license: http://opensource.org/licenses/bsd-license.php
-  repository: git://github.com/michal-josef-spacek/Plack-App-Tree-Oracle
+  repository: git://github.com/michal-josef-spacek/Plack-App-Tree-Manager
 version: '0.01'

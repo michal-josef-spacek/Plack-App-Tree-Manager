@@ -1,10 +1,10 @@
-package Plack::App::Tree::Oracle;
+package Plack::App::Tree::Manager;
 
 use base qw(Plack::Component::Tags::HTML);
 use strict;
 use warnings;
 
-use Tags::HTML::Tree::Oracle;
+use Tags::HTML::Tree::Manager;
 
 our $VERSION = 0.01;
 
@@ -20,7 +20,7 @@ sub _cleanup {
 sub _prepare_app {
 	my $self = shift;
 
-	$self->{'_tags_html_tree_oracle'} = Tags::HTML::Tree::Oracle->new;
+	$self->{'_tags_html_tree_oracle'} = Tags::HTML::Tree::Manager->new;
 
 	return;
 }
@@ -50,13 +50,13 @@ __END__
 
 =head1 NAME
 
-Plack::App::Tree::Oracle - Plack Oracle Tree Manager application.
+Plack::App::Tree::Manager - Plack Manager Tree Manager application.
 
 =head1 SYNOPSIS
 
- use Plack::App::Tree::Oracle;
+ use Plack::App::Tree::Manager;
 
- my $obj = Plack::App::Tree::Oracle->new(%parameters);
+ my $obj = Plack::App::Tree::Manager->new(%parameters);
  my $psgi_ar = $obj->call($env);
  my $app = $obj->to_app;
 
@@ -64,7 +64,7 @@ Plack::App::Tree::Oracle - Plack Oracle Tree Manager application.
 
 =head2 C<new>
 
- my $obj = Plack::App::Tree::Oracle->new(%parameters);
+ my $obj = Plack::App::Tree::Manager->new(%parameters);
 
 Constructor.
 
@@ -93,11 +93,11 @@ Returns Plack::Component object.
  use strict;
  use warnings;
 
- use Plack::App::Tree::Oracle;
+ use Plack::App::Tree::Manager;
  use Plack::Runner;
 
  # Run application.
- my $app = Plack::App::Tree::Oracle->new->to_app;
+ my $app = Plack::App::Tree::Manager->new->to_app;
  Plack::Runner->new->run($app);
 
  # Output:
@@ -112,7 +112,7 @@ L<Plack::Component>.
 
 =head1 REPOSITORY
 
-L<https://github.com/michal-josef-spacek/Plack-App-Tree-Oracle>
+L<https://github.com/michal-josef-spacek/Plack-App-Tree-Manager>
 
 =head1 AUTHOR
 

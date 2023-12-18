@@ -1,16 +1,16 @@
 NAME
-    Plack::App::Tree::Oracle - Plack Oracle Tree Manager application.
+    Plack::App::Tree::Manager - Plack Manager Tree Manager application.
 
 SYNOPSIS
-     use Plack::App::Tree::Oracle;
+     use Plack::App::Tree::Manager;
 
-     my $obj = Plack::App::Tree::Oracle->new(%parameters);
+     my $obj = Plack::App::Tree::Manager->new(%parameters);
      my $psgi_ar = $obj->call($env);
      my $app = $obj->to_app;
 
 METHODS
   "new"
-     my $obj = Plack::App::Tree::Oracle->new(%parameters);
+     my $obj = Plack::App::Tree::Manager->new(%parameters);
 
     Constructor.
 
@@ -34,11 +34,11 @@ EXAMPLE
      use strict;
      use warnings;
 
-     use Plack::App::Tree::Oracle;
+     use Plack::App::Tree::Manager;
      use Plack::Runner;
 
      # Run application.
-     my $app = Plack::App::Tree::Oracle->new->to_app;
+     my $app = Plack::App::Tree::Manager->new->to_app;
      Plack::Runner->new->run($app);
 
      # Output:
@@ -51,7 +51,7 @@ DEPENDENCIES
     Plack::Component.
 
 REPOSITORY
-    <https://github.com/michal-josef-spacek/Plack-App-Tree-Oracle>
+    <https://github.com/michal-josef-spacek/Plack-App-Tree-Manager>
 
 AUTHOR
     Michal Josef Špaček <mailto:skim@cpan.org>
